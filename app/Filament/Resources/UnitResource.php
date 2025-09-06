@@ -17,7 +17,7 @@ class UnitResource extends Resource
 {
     protected static ?string $model = Unit::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-users';
+    protected static ?string $navigationIcon = 'heroicon-o-archive-box';
     protected static ?string $navigationGroup = 'ابزارالات';
     protected static ?string $modelLabel = 'واحد اندازه گیری';
     protected static ?string $pluralModelLabel = 'واحدهای اندازه گیری';
