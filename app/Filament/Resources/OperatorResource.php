@@ -72,11 +72,11 @@ class OperatorResource extends Resource
                 Tables\Columns\IconColumn::make('status')
                     ->boolean(),               
                 Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
+                    ->jalaliDateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
+                    ->jalaliDateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])

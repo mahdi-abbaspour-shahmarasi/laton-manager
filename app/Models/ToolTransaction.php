@@ -11,7 +11,7 @@ class ToolTransaction extends Model
     use LogsActivity;
 
     protected $fillable=['transaction_id', 'tool_id', 'station_id', 'operator_id', 'count', 'transaction_date_time', 'description'];
-    protected $table = 'tool_transaction';
+    protected $table = 'tool_transaction';    
 
     public function transaction():BelongsTo
     {

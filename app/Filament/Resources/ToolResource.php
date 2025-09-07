@@ -66,11 +66,11 @@ class ToolResource extends Resource
                     ->numeric()
                     ->sortable(),                
                 Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
+                    ->jalaliDateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
+                    ->jalaliDateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
@@ -90,7 +90,7 @@ class ToolResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            RelationManagers\TransactionRelationManager::class,
         ];
     }
 

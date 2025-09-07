@@ -44,6 +44,7 @@ class ToolTransactionResource extends Resource
                     ->numeric()
                     ->default(1),
                 Forms\Components\DateTimePicker::make('transaction_date_time')
+                    ->jalali()
                     ->required(),
                 Forms\Components\Textarea::make('description')
                     ->columnSpanFull(),
@@ -77,7 +78,7 @@ class ToolTransactionResource extends Resource
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
-                    ->jalaliDate()
+                    ->jalaliDateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])

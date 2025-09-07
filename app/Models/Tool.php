@@ -29,6 +29,11 @@ class Tool extends Model
         return $this->belongsToMany(Supplier::class);
     }
 
+    public function transactions()
+    {
+        return $this->belongsToMany(Transaction::class);
+    }
+
 
     public function getActivitylogOptions(): LogOptions
     {

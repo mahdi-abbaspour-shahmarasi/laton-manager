@@ -46,11 +46,11 @@ class TransactionResource extends Resource
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),                
                 Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
+                    ->jalaliDateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
+                    ->jalaliDateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
