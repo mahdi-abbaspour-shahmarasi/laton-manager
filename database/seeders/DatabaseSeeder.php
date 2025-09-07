@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             BrandSeeder::class,
             SupplierSeeder::class,
             StationSeeder::class,
+            OperatorSeeder::class,
         ]);
     }
 }
