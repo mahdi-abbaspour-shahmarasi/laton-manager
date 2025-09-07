@@ -32,7 +32,7 @@ class AppServiceProvider extends ServiceProvider
 
         /**تنظیمات فرمت پیش فرض نمایش تاریخ شمسی */
         Table::$defaultDateDisplayFormat = 'Y/m/d';
-        Table::$defaultDateTimeDisplayFormat = 'Y/m/d H:i:s';
+        Table::$defaultDateTimeDisplayFormat = 'Y/m/d H:i';
 
         /**تنظیم ترجمه پیش فرض لیبل ها به فارسی */
         $this->autoTranslateLabels();

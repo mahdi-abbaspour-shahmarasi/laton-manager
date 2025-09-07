@@ -56,6 +56,11 @@
     "Address":"آدرس",
     "Brand":"برند",
     "Model":"مدل",
-    "Suppliers":"تامین کنندگان"
+    "Suppliers":"تامین کنندگان",
+    "Tool":"ابزار",
+    "Operator":"اوپراتور",
+    "Count":"تعداد",
+    "Transaction date time":"زمان تراکنش",
+    "Transaction":"نوع تراکنش"
 
 }
