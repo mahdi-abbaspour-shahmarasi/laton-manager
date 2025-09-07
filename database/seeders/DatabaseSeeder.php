@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             SupplierSeeder::class,
             StationSeeder::class,
             OperatorSeeder::class,
+            ToolSeeder::class,
         ]);
     }
 }
