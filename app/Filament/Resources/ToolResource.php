@@ -41,6 +41,10 @@ class ToolResource extends Resource
                     ->image()
                     ->imageEditor()
                     ->default(null),
+                Forms\Components\Select::make('supplier_id')
+                    ->multiple()
+                    ->preload()
+                    ->relationship('suppliers', 'name'),
                 Forms\Components\Textarea::make('description')
                     ->columnSpanFull(),
             ]);

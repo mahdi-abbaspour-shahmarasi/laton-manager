@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Spatie\Activitylog\LogOptions;
 
@@ -22,6 +23,12 @@ class Tool extends Model
     {
         return $this->belongsTo(Unit::class);
     }
+
+    public function suppliers():BelongsToMany
+    {
+        return $this->belongsToMany(Supplier::class);
+    }
+
 
     public function getActivitylogOptions(): LogOptions
     {
