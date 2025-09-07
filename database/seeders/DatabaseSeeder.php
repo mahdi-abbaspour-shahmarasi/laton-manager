@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
             OperatorSeeder::class,
             ToolSeeder::class,
             SupplierToolSeeder::class,
+            TransactionSeeder::class,
         ]);
     }
 }
